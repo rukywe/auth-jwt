@@ -3,7 +3,7 @@ require("dotenv").config();
 const express = require("express");
 const morgan = require("morgan");
 const createError = require("http-errors");
-const connectDB = require("./utils/connectToDB");
+const connectDB = require("./utils/connect_to_db");
 
 const AuthRoute = require("./Routes/Auth.route");
 
