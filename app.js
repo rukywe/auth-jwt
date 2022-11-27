@@ -3,9 +3,11 @@ require("dotenv").config();
 const express = require("express");
 const morgan = require("morgan");
 const createError = require("http-errors");
+const connectDB = require("./utils/connectToDB");
 
 const AuthRoute = require("./Routes/Auth.route");
 
+connectDB();
 const app = express();
 app.use(morgan("dev"));
 
